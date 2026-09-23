@@ -1,0 +1,275 @@
+/* Estilo general */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo del html */
+body {
+    background: linear-gradient(135deg, #ffffff, #ffe5e5);
+    color: #111111;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    min-height: 100px;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    align-items: center;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 6%;
+}
+
+/* Estilos del logo (Autoescuela Máxima) */
+.logo h2 {
+    color: #ff3b42;
+    font-size: clamp(20px, 3px, 28px);
+    margin: 0;
+}
+
+/* Estilos de la lista (inicio, contacto y clases) */
+.links ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de cada apartado de la lista */
+li {
+    border: 2px solid #d71920;
+    padding: 7px 11px;
+}
+
+/* Estilos de los enlaces de la lista */
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos de cuadno se pone el cursor sobre los recuadros de la lista */
+li:hover {
+    background-color: #d71920;
+}
+
+/* Estilos de la seccion del main (Apartado de presentacion) */
+main {
+    background-color: rgba(255, 255, 255, 15%);
+    margin: 8% auto;
+    max-width: 850px;
+    padding: clamp(20px, 5px, 40px);
+    width: min(85%, 850px);
+}
+
+/* Estilos de los encabezados */
+h1 {
+    border-bottom: 3px solid #d71920;
+    color: #d71920;
+    font-size: clamp(24px, 4px, 32px);
+    padding-bottom: 8px;
+}
+
+/* estilos de los parrafos */
+p {
+    font-size: 17.7px;
+    line-height: 1.6;
+}
+
+/* De la clase de presentación los estilos de la imagen */
+.presentation img {
+    border-radius: 25%;
+    display: block;
+    height: auto;
+    margin: 25px auto 40px;
+    max-width: 100%;
+}
+
+/* Estilos de la imagen del logo de tocina */
+.logotocina {
+    height: 300px;
+    max-width: 250px !important;
+    width: 250px;
+}
+
+/* Estilos del footer */
+.site-footer {
+    background-color: #111111;
+    border-top: 3px solid #d71920;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+/* Estilos para los contenedores del footer */
+.footer-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3);
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 40px 6%;
+}
+
+/* Estilos para las clases del footer */
+.footer-brand h3,
+.footer-links h4,
+.footer-contact h4 {
+    color: #ff3b42;
+    margin-bottom: 15px;
+}
+
+/* Estilos para las clases del footer */
+.footer-brand p,
+.footer-contact p,
+.footer-links li,
+.footer-links a {
+    color: #f3f3f3;
+    line-height: 1.8;
+    text-decoration: none;
+}
+
+/* Estilos para las listas del footer (Los links) */
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para cada apartado de dentro de una lista */
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+/* Estilos para los enlaces del footer para cuando se pone el cursos encima */
+.footer-links a:hover {
+    color: #ffb3b3;
+}
+
+/* Final del footer */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Parrafos del final del footer */
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Arreglo para los dispositivos mas pequeños (responsiveness) */
+@media (max-width: 600px) {
+    .navbar {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 15px;
+        padding: 16px 5%;
+    }
+
+    .links ul {
+        justify-content: center;
+    }
+
+    li {
+        flex: 1;
+        text-align: center;
+    }
+
+    main {
+        margin: 8% auto;
+        width: 90%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1;
+        text-align: center;
+    }
+}
+
+/* APARTADO PARA SECCIÓN DE CLASES (clases.html) */
+
+/* Estilos del contenedor de tipos de clases */
+.clases-tipos {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, minmax(220px, 1));
+    margin: 50px auto;
+    max-width: 1100px;
+    padding: 0 5%;
+}
+
+/* Estilos del contenedor de tipos de clases en cada div */
+.clases-tipos div {
+    background: rgba(255, 255, 255, 0.92);
+    border: 2px solid #d71920;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(17, 17, 17, 0.08);
+    padding: 24px 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Estilos del contenedor de las clases para cuadno se pone el cursor encima de un div */
+.clases-tipos div:hover {
+    box-shadow: 0 14px 30px rgba(17, 17, 17, 0.12);
+}
+
+/* Estilos de los encabezados h2 */
+.clases-tipos h2 {
+    color: #d71920;
+    font-size: clamp(1.5, 2, 2);
+    margin: 0 0 14px;
+    text-align: center;
+}
+
+/* Estilos de los parrafos */
+.clases-tipos p {
+    color: #111111;
+    line-height: 1.7;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Estilos de la tabla */
+.clases-tipos table {
+    border-collapse: collapse;
+    margin-top: 18px;
+    width: 100%;
+}
+
+/* Hacer diseño de los th y td */
+.clases-tipos th,
+.clases-tipos td {
+    border: 1px solid #d71920;
+    padding: 12px 10px;
+    text-align: center;
+}
+
+/* Hacer diseño de los th */
+.clases-tipos th {
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 0.95;
+}
+
+/* Hacer diseño de los td */
+.clases-tipos td {
+    background-color: #fff7f7;
+    color: #111111;
+}
+
+/* Hacer diseño de las tres clases */
+.clase-individual,
+.clase-doble,
+.clase-teorica {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Arreglo para responsive en las clases */
+@media (max-width: 860px) {
+    .clases-tipos {
+        grid-template-columns: 1;
+    }
+}

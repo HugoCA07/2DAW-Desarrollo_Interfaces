@@ -1,0 +1,121 @@
+/* Clase para la página de contacto */
+.contact-page {
+    padding: 20px 30px;
+}
+
+/* Introducción */
+.contact-intro {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Grid de los contactos */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1 1.2;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+/* Estilos del formulario y la caja de información */
+.info-box,
+.form-box {
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #111111;
+    border-radius: 18px;
+    padding: 24px;
+}
+
+/* Estilos del formulario y la caja de información, de los encabezados */
+.info-box h2,
+.form-box h2 {
+    border-bottom: 2px solid #d71920;
+    color: #d71920;
+    font-size: 15px;
+    margin-top: 0;
+    padding-bottom: 8px;
+}
+
+/* Estilos de la lista con la información */
+.info-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de cada apartado de la lista*/
+.info-list li {
+    border: none;
+    color: #111111;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+/* Para las letras en negrita (el inicio de cada apartado) */
+.info-list strong {
+    color: #d71920;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Cada apartado del formulario de contacto */
+.contact-form label {
+    color: #111111;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* Los input del mensaje*/
+.contact-form input,
+.contact-form textarea {
+    background-color: #fff;
+    border: 2px solid #d71920;
+    border-radius: 10px;
+    color: #111111;
+    font: inherit;
+    padding: 12px 14px;
+    width: 100%;
+}
+
+/* Formulario de contacto, para introducir texto y que 
+solo se pueda reescalar en vertical */
+.contact-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* Botón del formulario de contacto */
+.contact-form button {
+    background-color: #d71920;
+    border: 2px solid #111111;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: background-color 0.2s ease;
+    width: 180px;
+}
+
+/* Cursor encima del botón */
+.contact-form button:hover {
+    background-color: #ff3b42;
+}
+
+/* Solución para el responsive */
+@media (max-width: 700px) {
+    .contact-grid {
+        grid-template-columns: 1;
+    }
+
+    .contact-page {
+        padding: 15px 18px;
+    }
+}
