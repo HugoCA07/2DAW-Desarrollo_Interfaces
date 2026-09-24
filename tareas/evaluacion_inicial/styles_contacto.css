@@ -94,6 +94,7 @@ solo se pueda reescalar en vertical */
 /* Botón del formulario de contacto */
 .contact-form button {
     background-color: #d71920;
+    border-radius: 8px;
     color: #ffffff;
     cursor: pointer;
     font-weight: bold;
