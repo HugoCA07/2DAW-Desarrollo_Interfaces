@@ -58,7 +58,6 @@ body {
 
 /* Estilos de cada apartado de la lista */
 li {
-    border: 2px solid #d71920;
     border-radius: 12px;
     padding: 7px 11px;
 }
