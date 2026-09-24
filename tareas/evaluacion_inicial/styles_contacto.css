@@ -21,7 +21,6 @@
 .info-box,
 .form-box {
     background: rgba(255, 255, 255, 0.7);
-    border: 2px solid #111111;
     border-radius: 18px;
     padding: 24px;
 }
@@ -95,7 +94,6 @@ solo se pueda reescalar en vertical */
 /* Botón del formulario de contacto */
 .contact-form button {
     background-color: #d71920;
-    border: 2px solid #111111;
     color: #ffffff;
     cursor: pointer;
     font-weight: bold;
@@ -104,9 +102,8 @@ solo se pueda reescalar en vertical */
     width: 180px;
 }
 
-/* Cursor encima del botón */
-.contact-form button:hover {
-    background-color: #ff3b42;
+.footer-links a {
+    color: white;
 }
 
 /* Solución para el responsive */

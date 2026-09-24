@@ -1,99 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Autoescuela Máxima</title>
-    <link rel="stylesheet" href="styles_contacto.css">
-        <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <h2>Autoescuela Máxima</h2>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contacto | Autoescuela Máxima</title>
+        <link rel="stylesheet" href="styles_contacto.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <h2>Autoescuela Máxima</h2>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="clases.html">Clases</a></li>
+                        <li><a href="profesores.html">Profes</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="links">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="clases.html">Clases</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="presentation">
-        <main class="contact-page">
-            <div class="contact-intro">
-                <h1>Contacto</h1>
-                <p>Estamos aquí para ayudarte a matricularte, resolver dudas y acompañarte en tu formación como conductor.</p>
-                <img src="assets/profe_autoescuela.png">
-            </div>
+        <section class="presentation">
+            <main class="contact-page">
+                <div class="contact-intro">
+                    <h1>Contacto</h1>
+                    <p>
+                        Estamos aquí para ayudarte a matricularte, resolver
+                        dudas y acompañarte en tu formación como conductor.
+                    </p>
+                    <img src="assets/profe_autoescuela.png" />
+                </div>
 
-            <div class="contact-grid">
-                <div class="info-box">
-                    <h2>Datos de contacto</h2>
-                    <ul class="info-list">
-                        <li><strong>Dirección:</strong> Tocina y Los Rosales, Sevilla</li>
-                        <li><strong>Email:</strong> info@autoescuelamaxima.com</li>
-                        <li><strong>Teléfono:</strong> +34 600 000 000</li>
-                        <li><strong>Horario:</strong> Lunes a viernes de 9:00 a 20:00</li>
+                <div class="contact-grid">
+                    <div class="info-box">
+                        <h2>Datos de contacto</h2>
+                        <ul class="info-list">
+                            <li>
+                                <strong>Dirección:</strong> Tocina y Los
+                                Rosales, Sevilla
+                            </li>
+                            <li>
+                                <strong>Email:</strong>
+                                info@autoescuelamaxima.com
+                            </li>
+                            <li><strong>Teléfono:</strong> +34 600 000 000</li>
+                            <li>
+                                <strong>Horario:</strong> Lunes a viernes de
+                                9:00 a 20:00
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="form-box">
+                        <h2>Envíanos un mensaje</h2>
+                        <form class="contact-form">
+                            <div>
+                                <label for="nombre">Nombre</label>
+                                <input
+                                    type="text"
+                                    id="nombre"
+                                    name="nombre"
+                                    placeholder="Tu nombre"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="tuemail@ejemplo.com"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="mensaje">Mensaje</label>
+                                <textarea
+                                    id="mensaje"
+                                    name="mensaje"
+                                    placeholder="Escribe aquí tu consulta..."
+                                ></textarea>
+                            </div>
+
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h3>Autoescuela Máxima</h3>
+                    <p>
+                        Formación profesional para conductores que buscan
+                        seguridad, confianza y excelencia.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="clases.html">Clases</a></li>
                     </ul>
                 </div>
 
-                <div class="form-box">
-                    <h2>Envíanos un mensaje</h2>
-                    <form class="contact-form">
-                        <div>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
-                        </div>
-
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com">
-                        </div>
-
-                        <div>
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu consulta..."></textarea>
-                        </div>
-
-                        <button type="submit">Enviar</button>
-                    </form>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>Tocina y Los Rosales, Sevilla</p>
+                    <p>info@autoescuelamaxima.com</p>
+                    <p>+34 600 000 000</p>
                 </div>
             </div>
-        </main>
-    </section>
 
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h3>Autoescuela Máxima</h3>
-                <p>Formación profesional para conductores que buscan seguridad, confianza y excelencia.</p>
+            <div class="footer-bottom">
+                <p>2026 Autoescuela Máxima. Todos los derechos reservados.</p>
             </div>
-
-            <div class="footer-links">
-                <h4>Enlaces</h4>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="clases.html">Clases</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-contact">
-                <h4>Contacto</h4>
-                <p>Tocina y Los Rosales, Sevilla</p>
-                <p>info@autoescuelamaxima.com</p>
-                <p>+34 600 000 000</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>2026 Autoescuela Máxima. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

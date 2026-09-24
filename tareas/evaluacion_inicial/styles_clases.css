@@ -1,0 +1,101 @@
+/* Estilo general */
+* {
+    box-sizing: border-box;
+}
+/* Estilos de la sección de clases */
+.clases-tipos {
+	display: grid;
+	gap: 24px;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	margin: 55px auto;
+	max-width: 1120px;
+	padding: 0 5%;
+}
+
+/* Estilos generales de cada tarjeta */
+.clases-tipos div {
+	background-color: #ffffff;
+	border: 1px solid #d71920;
+	border-radius: 10px;
+	box-shadow: 0 6px 16px rgba(17, 17, 17, 0.12);
+	padding: 26px 22px;
+}
+
+/* Diferencia visual para cada tipo de clase */
+.clase-doble {
+	border-top-color: #d71920 !important;
+}
+
+.clase-teorica {
+	background-color: #fff7f7 !important;
+}
+
+/* Estilos de los títulos de las tarjetas */
+.clases-tipos h2 {
+	border-bottom: 2px solid #d71920;
+	color: #d71920;
+	font-size: 24px;
+	margin: 0 0 16px;
+	padding-bottom: 10px;
+}
+
+/* Estilos de la información de cada clase */
+.clases-tipos p {
+	color: #111111;
+	font-size: 16px;
+	line-height: 1.7;
+	margin: 0;
+}
+
+/* Estilos de la tabla de precios */
+.clases-tipos table {
+	border-collapse: collapse;
+	margin-top: 8px;
+	width: 100%;
+	border-radius: 4px;
+	border: 1px solid #d71920;
+	border-radius: 2px;
+}
+
+.clases-tipos th,
+.clases-tipos td {
+	padding: 11px 8px;
+	text-align: center;
+}
+
+.clases-tipos th {
+	background-color: #111111;
+	color: #ffffff;
+	font-size: 0.9rem;
+}
+
+.clases-tipos td {
+	background-color: #ffffff;
+	color: #111111;
+	font-size: 14px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 860px) {
+	.clases-tipos {
+		grid-template-columns: 1fr;
+		margin: 35px auto;
+		max-width: 560px;
+	}
+}
+
+@media (max-width: 480px) {
+	.clases-tipos {
+		padding: 0 6%;
+	}
+
+	.clases-tipos div {
+		padding: 22px 16px;
+	}
+
+	.clases-tipos th,
+	.clases-tipos td {
+		font-size: 12px;
+		padding: 9px 5px;
+	}
+}

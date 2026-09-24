@@ -1,0 +1,244 @@
+/* Estilo general */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo del html */
+body {
+    background: linear-gradient(135deg, #adadad 0%, #ffffff 100%);
+    color: #111111;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    align-items: center;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 6%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 16px;
+}
+
+/* Estilos del logo (Autoescuela Máxima) */
+.logo h2 {
+    color: #ff3b42;
+    font-size: clamp(20px, 2vw, 28px);
+    margin: 0;
+}
+
+/* Estilos de la lista (inicio, contacto y clases) */
+.links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de cada apartado de la lista */
+li {
+    border: 2px solid #d71920;
+    border-radius: 12px;
+    padding: 7px 11px;
+    background: linear-gradient(135deg, #e3e3e3 0%, #e6e6e6 100%);
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+/* Estilos de los enlaces de la lista */
+li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: clamp(20px, 4vw, 40px);
+    width: min(85%, 980px);
+    border-radius: 12px;
+}
+
+.profesora,
+.profesor {
+    display: flex;
+    align-items: center;
+    gap: clamp(20px, 4vw, 40px);
+    margin: 0 auto 42px;
+}
+
+.imagen-profesora,
+.imagen-profesor {
+    flex: 0 0 280px;
+    margin: 0;
+}
+
+.imagen-profesora img,
+.imagen-profesor img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 14px 30px rgba(17, 17, 17, 0.12);
+}
+
+.texto-profesora,
+.texto-profesor {
+    flex: 1;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.texto-profesora h1,
+.texto-profesor h1 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #111111;
+}
+
+.texto-profesora p,
+.texto-profesor p {
+    margin: 0;
+}
+
+/* Estilos del footer */
+.site-footer {
+    background-color: #111111;
+    border-top: 3px solid #d71920;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+/* Estilos para los contenedores del footer */
+.footer-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 40px 6%;
+}
+
+/* Estilos para las clases del footer */
+.footer-brand h3,
+.footer-links h4,
+.footer-contact h4 {
+    color: #ff3b42;
+    margin-bottom: 15px;
+}
+
+/* Estilos para las clases del footer */
+.footer-brand p,
+.footer-contact p,
+.footer-links li,
+.footer-links a {
+    color: #f3f3f3;
+    line-height: 1.8;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.footer-links a {
+    color: black;
+}
+
+.footer-links a:hover {
+    color: #d71920;
+}
+
+/* Estilos para las listas del footer (Los links) */
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para cada apartado de dentro de una lista */
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+/* Final del footer */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Parrafos del final del footer */
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Arreglo para los dispositivos mas pequeños (responsiveness) */
+@media (max-width: 700px) {
+    body {
+        padding-top: 175px;
+    }
+
+    .navbar {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 15px;
+        padding: 16px 5%;
+    }
+
+    .links ul {
+        justify-content: center;
+    }
+
+    li {
+        flex: 1;
+        text-align: center;
+    }
+
+    main {
+        width: min(90%, 980px);
+        padding-top: 10px;
+    }
+
+    .profesora,
+    .profesor {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .texto-profesora,
+    .texto-profesor {
+        text-align: left;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

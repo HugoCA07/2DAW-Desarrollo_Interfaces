@@ -5,20 +5,39 @@
 
 /* Estilos del cuerpo del html */
 body {
-    background: linear-gradient(135deg, #ffffff, #ffe5e5);
+    background: linear-gradient(135deg, #adadad 0%, #ffffff 100%);
     color: #111111;
-    font-family: Arial, sans-serif;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     margin: 0px;
     min-height: 100px;
+    padding-top: 120px;
 }
 
 /* Estilos de la barra de navegación */
 .navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
     align-items: center;
     background-color: #111111;
     display: flex;
     justify-content: space-between;
     padding: 18px 6%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 16px;
+}
+
+.navbar li {
+    background: linear-gradient(135deg, #e3e3e3 0%, #e6e6e6 100%);
+}
+
+.navbar li:hover {
+    background-color: #d71920;
 }
 
 /* Estilos del logo (Autoescuela Máxima) */
@@ -40,18 +59,14 @@ body {
 /* Estilos de cada apartado de la lista */
 li {
     border: 2px solid #d71920;
+    border-radius: 12px;
     padding: 7px 11px;
 }
 
 /* Estilos de los enlaces de la lista */
 li a {
-    color: white;
+    color: black;
     text-decoration: none;
-}
-
-/* Estilos de cuadno se pone el cursor sobre los recuadros de la lista */
-li:hover {
-    background-color: #d71920;
 }
 
 /* Estilos de la seccion del main (Apartado de presentacion) */
@@ -61,6 +76,7 @@ main {
     max-width: 850px;
     padding: clamp(20px, 5px, 40px);
     width: min(85%, 850px);
+    border-radius: 12px;
 }
 
 /* Estilos de los encabezados */
@@ -79,7 +95,7 @@ p {
 
 /* De la clase de presentación los estilos de la imagen */
 .presentation img {
-    border-radius: 25%;
+    border-radius: 12px;
     display: block;
     height: auto;
     margin: 25px auto 40px;
@@ -127,6 +143,7 @@ p {
     color: #f3f3f3;
     line-height: 1.8;
     text-decoration: none;
+    border-radius: 12px;
 }
 
 /* Estilos para las listas del footer (Los links) */
@@ -160,6 +177,10 @@ p {
 
 /* Arreglo para los dispositivos mas pequeños (responsiveness) */
 @media (max-width: 600px) {
+    body {
+        padding-top: 175px;
+    }
+
     .navbar {
         align-items: stretch;
         flex-direction: column;
@@ -206,7 +227,9 @@ p {
     border-radius: 18px;
     box-shadow: 0 8px 24px rgba(17, 17, 17, 0.08);
     padding: 24px 20px;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 /* Estilos del contenedor de las clases para cuadno se pone el cursor encima de un div */
