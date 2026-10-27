@@ -1,0 +1,37 @@
+body {
+    background-color: mediumturquoise;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 600px;
+    height: 600px;
+    background-color: lightblue;
+    margin: auto;
+}
+
+.item {
+    width: 60px;
+    height: 60px;
+    border: 2px solid mediumblue; 
+}
+.static {
+    background-color: seagreen;
+}
+.relative {
+    background-color: orangered;
+    position: relative;
+    left: 80px;
+    top: 100px;
+}
+.absolute {
+    background-color: chartreuse;
+    position: absolute;
+}
+.fixed {
+    background-color: hotpink;
+    position: fixed;
+}

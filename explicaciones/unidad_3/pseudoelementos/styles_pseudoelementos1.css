@@ -1,0 +1,17 @@
+/* body {
+    background-color: mediumturquoise;
+} */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p:first-child {
+    text-decoration: underline;
+}
+p:first-of-type {
+    background-color: lightblue;
+}
+p:nth-child(2) {
+    padding: 50px;
+}

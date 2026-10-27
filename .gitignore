@@ -1,0 +1,41 @@
+# --- Entorno y Dependencias ---
+node_modules/
+.env
+.env.local
+.env.*.local
+
+# --- Archivos del Sistema Operativo ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.fuse_hidden*
+.directory
+*~
+
+# --- IDEs y Editores de Código ---
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ / WebStorm / PyCharm
+.idea/
+*.iml
+*.iws
+
+# --- Logs y Temporales ---
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
