@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: hsl(217, 27%, 15%);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+
+    padding-top: 48px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.navbar-logo img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+.navbar-links {
+    margin-left: auto;
+    display: flex;
+    gap: 24px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.header-images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-image: url("../img/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 110px;
+}
+
+.header-images img {
+    height: auto;
+}
+
+main {
+    background-color: hsl(217, 27%, 13%);
+}
+
+.primary-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px;
+    text-align: center;
+}
+
+.primary-section h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 36px;
+    font-weight: 900;
+}
+
+.primary-section p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.primary-section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(
+        to right,
+        #090a0f 0%,
+        #1c1318 25%,
+        #765661 65%,
+        #cca3b1 100%
+    );
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    width: 192px;
+    height: 48px;
+
+    border-radius: 32px;
+}
+
+.containers-section-vertical {
+    padding: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 50%;
+    text-align: center;
+    padding: 24px;
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container img {
+    display: block;
+    margin: 0 auto 24px;
+}
+
+.feature-section {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.feature-media {
+    width: 50%;
+}
+
+.feature-media img {
+    width: 100%;
+    height: auto;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 75%;
+}
+
+.feature-title {
+    font-weight: 800;
+}
+
+.feature-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+
+    color: hsl(177, 48%, 55%);
+    text-decoration: none;
+    border-bottom: 2px solid hsl(177, 48%, 55%);
+    padding-bottom: 12px;
+}
+
+.reviews-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.reviews-logo img {
+    display: block;
+}
+
+.reviews-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+
+.review {
+    flex: 1;
+    padding: 24px;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 8px;
+}
+
+.review-paragraph {
+    margin-bottom: 24px;
+}
+
+.review-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.review-profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.review-profile-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-bottom: -90px;
+    padding: 36px 16px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 12px;
+}
+
+.early-access-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 48px;
+    font-size: 16px;
+}
+
+.form-group button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 48px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(
+        to right,
+        hsl(176, 68%, 64%),
+        hsl(198, 60%, 50%)
+    );
+}
+
+.footer {
+    background-color: hsl(215, 52%, 9%);
+    padding-top: 150px;
+    padding-bottom: 64px;
+
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.footer-logo {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    max-width: 260px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
