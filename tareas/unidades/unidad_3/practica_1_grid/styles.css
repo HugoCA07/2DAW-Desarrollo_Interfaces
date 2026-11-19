@@ -398,6 +398,10 @@ body {
         font-size: 5vh;
     }
 
+    .logo {
+        margin: 0 auto;
+    }
+
     .logo::after {
         content: "";
         background-image: linear-gradient(transparent);
@@ -407,14 +411,29 @@ body {
         content: "";
         background-image: linear-gradient(transparent);
     }
+
+    .navbar {
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
 }
 
 @media (min-width: 992px) {
     .hero-text p {
-        font-size: 2.5vh;
+        font-size: 2.5vw;
     }
 
     .hero-text h1 {
-        font-size: 5vh;
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-text p {
+        font-size: 1.5vw;
+    }
+
+    .hero-text h1 {
+        font-size: 3vw;
     }
 }
