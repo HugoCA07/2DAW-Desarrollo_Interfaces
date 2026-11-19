@@ -1,146 +1,264 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Trace</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <header>
-            <nav class="navbar" aria-label="Navegación principal">
-                <a href="#" class="logo">
-                    <img src="images/logo.svg" alt="Trace - Inicio" />
-                </a>
-                <ul class="links">
-                    <li><a href="#caracteristicas">Características</a></li>
-                    <li><a href="#precios">Precios</a></li>
-                    <li><a href="#">Iniciar Sesión</a></li>
-                    <li>
-                        <a href="#" class="download">
-                            <span>Descargar</span>
-                            <img
-                                src="images/download.png"
-                                alt=""
-                                aria-hidden="true"
-                            />
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Trace</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link
+			href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+			rel="stylesheet"
+	/>
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header>
+	<nav class="navbar" aria-label="Navegación principal">
+		<a href="#" class="logo">
+			<img src="images/logo.svg" alt="Trace - Inicio"/>
+		</a>
+		<ul class="links">
+			<li><a href="#caracteristicas">Características</a></li>
+			<li><a href="#">Precios</a></li>
+			<li><a href="#">Iniciar Sesión</a></li>
+			<li>
+				<a href="#" class="download">
+					<span>Descargar</span>
+					<img
+							src="images/download.png"
+							alt=""
+							aria-hidden="true"
+					/>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<div class="hero">
+		<div class="hero-text">
+			<h1>Tu vida, simplificada en la palma de tu mano</h1>
+			<p>
+				Vestibulum ac accumsan nulla, eget bibendum erat. Nullam
+				lacinia sed felis cursus sodales.
+			</p>
+			<div class="hero-buttons">
+				<a href="#" class="hero-button-left">
+					<span>Ver demo</span>
+					<img src="images/play.svg" alt=""/>
+				</a>
+				<a href="#" class="hero-button-right">
+					<span>Descargar</span>
+					<img src="images/download.png" alt=""/>
+				</a>
+			</div>
+			<div class="hero-info">
+				<div class="hero-info-left">
+					<img
+							src="images/people.png"
+							alt="Avatares de usuarios"
+					/>
+					<p>+200,000 Usuarios</p>
+				</div>
+				<div
+						class="hero-info-separator"
+						aria-hidden="true"
+				></div>
+				<div class="hero-info-right">
+					<img src="images/global.svg" alt=""/>
+					<p>+50 países</p>
+				</div>
+			</div>
+		</div>
+		<div class="hero-image">
+			<img
+					src="images/1.png"
+					alt="Vista previa de la aplicación Trace"
+			/>
+		</div>
+	</div>
+</header>
 
-            <div class="hero">
-                <div class="hero-text">
-                    <h1>Tu vida, simplificada en la palma de tu mano</h1>
-                    <p>
-                        Vestibulum ac accumsan nulla, eget bibendum erat. Nullam
-                        lacinia sed felis cursus sodales.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#" class="hero-button-left">
-                            <span>Ver demo</span>
-                            <img src="images/play.svg" alt="" />
-                        </a>
-                        <a href="#" class="hero-button-right">
-                            <span>Descargar</span>
-                            <img src="images/download.png" alt="" />
-                        </a>
-                    </div>
-                    <div class="hero-info">
-                        <div class="hero-info-left">
-                            <img
-                                src="images/people.png"
-                                alt="Avatares de usuarios"
-                            />
-                            <p>+200,000 Usuarios</p>
-                        </div>
-                        <div
-                            class="hero-info-separator"
-                            aria-hidden="true"
-                        ></div>
-                        <div class="hero-info-right">
-                            <img src="images/global.svg" alt="" />
-                            <p>+50 países</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img
-                        src="images/1.png"
-                        alt="Vista previa de la aplicación Trace"
-                    />
-                </div>
-            </div>
-        </header>
+<main>
+	<section id="caracteristicas" class="caracteristicas">
+		<h2>Características</h2>
+		<div class="cards">
+			<div class="carditem-image">
+				<div class="card_image">
+					<img
+							src="images/4.png"
+							alt="Panel de control de Trace"
+					/>
+				</div>
+			</div>
+			<article class="carditem selected">
+				<div class="card-separator">&lt;</div>
+				<div class="card-text">
+					<h3>Lorem ipsum, dolor sit amet</h3>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur
+						adipisicing elit. Reiciendis cumque vel quod
+						similique ipsum eum cum corporis! Reprehenderit,
+						dolores eaque.
+					</p>
+				</div>
+			</article>
+			<article class="carditem">
+				<div class="card-separator">&lt;</div>
+				<div class="card-text">
+					<h3>Lorem ipsum, dolor sit amet</h3>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur
+						adipisicing elit. Reiciendis cumque vel quod
+						similique ipsum eum cum corporis! Reprehenderit,
+						dolores eaque.
+					</p>
+				</div>
+			</article>
+			<article class="carditem">
+				<div class="card-separator">&lt;</div>
+				<div class="card-text">
+					<h3>Lorem ipsum, dolor sit amet</h3>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur
+						adipisicing elit. Reiciendis cumque vel quod
+						similique ipsum eum cum corporis! Reprehenderit,
+						dolores eaque.
+					</p>
+				</div>
+			</article>
+			<article class="carditem">
+				<div class="card-separator">&lt;</div>
+				<div class="card-text">
+					<h3>Lorem ipsum, dolor sit amet</h3>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur
+						adipisicing elit. Reiciendis cumque vel quod
+						similique ipsum eum cum corporis! Reprehenderit,
+						dolores eaque.
+					</p>
+				</div>
+			</article>
+		</div>
+	</section>
+	<section id="precios" class="precios">
+		<h2>Precios</h2>
+		<div class="prices">
+			<div class="price">
+				<h3>Intro</h3>
+				<h3>$5 <small>USD/mes</small></h3>
+				<p>Plan básico para proyectos hobbie o prototipos.</p>
+				<div class="price-info">
+					<div class="price-info-image">
+						<img src="images/check.png" alt="check"/>
+					</div>
+					<p>1,000 Descargas</p>
+				</div>
+				<div class="price-info">
+					<div class="price-info-image">
+						<img src="images/check.png" alt="check"/>
+					</div>
+					<p>1,000 Subidas</p>
+				</div>
+				<div class="price-info">
+					<div class="price-info-image">
+						<img src="images/check.png" alt="check"/>
+					</div>
+					<p>1GB de Almacenamiento</p>
+				</div>
+                <a href="#" class="price-button">Escoger plan</a>
+			</div>
+			<div class="price selected">
+				<h3>Personal</h3>
+				<h3>$10 <small>USD/mes</small></h3>
+				<p>Plan personal para proyectos pequeños.</p>
+				<div class="price-info">
+					<div class="price-info-image">
+						<img src="images/check.png" alt="check"/>
+					</div>
+					<p>5,000 Descargas</p>
+				</div>
+				<div class="price-info">
+					<div class="price-info-image">
+						<img src="images/check.png" alt="check"/>
+					</div>
+					<p>5,000 Subidas</p>
+				</div>
+				<div class="price-info">
+					<div class="price-info-image">
+						<img src="images/check.png" alt="check"/>
+					</div>
+					<p>5GB de Almacenamiento</p>
+				</div>
+                <a href="#" class="price-button">Escoger plan</a>
+			</div>
+			<div class="price">
+				<h3>Profesional</h3>
+				<h3>$15 <small>USD/mes</small></h3>
+				<p>Plan básico para proyectos profesionales y comerciales.</p>
+				<div class="price-info">
+					<div class="price-info-image">
+						<img src="images/check.png" alt="check"/>
+					</div>
+					<p>15,000 Descargas</p>
+				</div>
+				<div class="price-info">
+					<div class="price-info-image">
+						<img src="images/check.png" alt="check"/>
+					</div>
+					<p>15,000 Subidas</p>
+				</div>
+				<div class="price-info">
+					<div class="price-info-image">
+						<img src="images/check.png" alt="check"/>
+					</div>
+					<p>15GB de Almacenamiento</p>
+				</div>
+                <a href="#" class="price-button">Escoger plan</a>
+			</div>
+			<div class="price">
+				<h3>Ultimate</h3>
+				<h3>$30 <small>USD/mes</small></h3>
+				<p>Plan para equipos y proyecto enterprise.</p>
+				<div class="price-info">
+					<div class="price-info-image">
+						<img src="images/check.png" alt="check"/>
+					</div>
+					<p>40,000 Descargas</p>
+				</div>
+				<div class="price-info">
+					<div class="price-info-image">
+						<img src="images/check.png" alt="check"/>
+					</div>
+					<p>40,000 Subidas</p>
+				</div>
+				<div class="price-info">
+					<div class="price-info-image">
+						<img src="images/check.png" alt="check"/>
+					</div>
+					<p>40GB de Almacenamiento</p>
+				</div>
+				<a href="#" class="price-button">Escoger plan</a>
+			</div>
+		</div>
+	</section>
+</main>
 
-        <main>
-            <section id="caracteristicas" class="caracteristicas">
-                <h2>Características</h2>
-                <div class="cards">
-                    <div class="carditem-image">
-                        <div class="card_image">
-                            <img
-                                src="images/4.png"
-                                alt="Panel de control de Trace"
-                            />
-                        </div>
-                    </div>
-                    <article class="carditem selected">
-                        <div class="card-separator">&lt;</div>
-                        <div class="card-text">
-                            <h3>Lorem ipsum, dolor sit amet</h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Reiciendis cumque vel quod
-                                similique ipsum eum cum corporis! Reprehenderit,
-                                dolores eaque.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="carditem">
-                        <div class="card-separator">&lt;</div>
-                        <div class="card-text">
-                            <h3>Lorem ipsum, dolor sit amet</h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Reiciendis cumque vel quod
-                                similique ipsum eum cum corporis! Reprehenderit,
-                                dolores eaque.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="carditem">
-                        <div class="card-separator">&lt;</div>
-                        <div class="card-text">
-                            <h3>Lorem ipsum, dolor sit amet</h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Reiciendis cumque vel quod
-                                similique ipsum eum cum corporis! Reprehenderit,
-                                dolores eaque.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="carditem">
-                        <div class="card-separator">&lt;</div>
-                        <div class="card-text">
-                            <h3>Lorem ipsum, dolor sit amet</h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Reiciendis cumque vel quod
-                                similique ipsum eum cum corporis! Reprehenderit,
-                                dolores eaque.
-                            </p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </main>
-    </body>
+<footer>
+	<div class="footer-container">
+		<div class="footer-left">
+			<div class="footer-logo">
+				<img src="images/logo.svg" alt="Trace logo"/>
+			</div>
+			<p><small>&commat; 2026 Trace todos los derechos reservados.</small></p>
+		</div>
+		<div class="footer-right">
+			<a href="#">Términos y condiciones</a>
+			<a href="#">Política de privacidad</a>
+			<a href="#">Trabajos</a>
+			<a href="#">Soporte &amp; Ayuda</a>
+		</div>
+	</div>
+</footer>
+</body>
 </html>
