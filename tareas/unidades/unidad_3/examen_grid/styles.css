@@ -1,0 +1,557 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.advert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1a1919;
+    padding: 0.5% 0;
+    border: 2px dashed grey;
+    font-weight: 100;
+    font-size: small;
+}
+
+.fecha {
+    color: gold;
+}
+
+.hora, .links a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5% 0;
+    border-bottom: grey 1px solid;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.number {
+    background-color: darkgoldenrod;
+    padding: 4%;
+    border-radius: 12px;
+}
+
+.text h1 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.text p {
+    font-size: smaller;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.enlace {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.nav-button {
+    background-color: darkslategrey;
+    padding: 0.5% 1%;
+    color: white;
+    border: none;
+    border-radius: 48px;
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    background-color: #d9d9d9;
+    padding: 3%;
+}
+
+.hero {
+    background-image: linear-gradient(to right, black, goldenrod);
+    color: white;
+    margin: 0 5%;
+    padding: 5% 4%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.hero-text p {
+    font-size: smaller;
+    color: goldenrod;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+}
+
+.hero-text h3 {
+    font-size: large;
+    color: grey;
+}
+
+.hero-button {
+    background-color: goldenrod;
+    border-radius: 32px;
+    padding: 1%;
+    width: fit-content;
+}
+
+.hero-button a {
+    text-decoration: none;
+}
+
+.hero-button p {
+    color: saddlebrown;
+    font-size: large;
+}
+
+.programacion-salas {
+    padding: 3% 5%;
+}
+
+.programacion-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.programacion-header p {
+    color: green;
+}
+
+.taquillas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: white;
+    padding: 2%;
+    width: 30%;
+    border-radius: 12px;
+    border: 2px solid grey;
+}
+
+.header-taquilla {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.campo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+    padding: 5% 0;
+}
+
+.abono {
+    margin-top: 5%;
+    padding: 5%;
+    background-color: #1a1919;
+    border-radius: 12px;
+    align-self: center;
+    width: 100%;
+    color: white;
+}
+
+.header-abono {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-abono h1 {
+    color: goldenrod;
+}
+
+.salas-stadistics {
+    padding: 3% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.peliculas {
+    padding: 3% 5%;
+}
+
+.peliculas-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.peliculas-header p {
+    color: green;
+}
+
+.container-peliculas {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1% 0;
+    gap: 2%;
+}
+
+.pelicula {
+    text-align: left;
+    padding: 16%;
+    border-radius: 12px;
+}
+
+.pelicula h3 {
+    font-size: large;
+    color: white;
+}
+
+.pelicula p {
+    font-size: smaller;
+    color: grey;
+}
+
+.pelicula.sal {
+    grid-column: span 4;
+    grid-row: span 4;
+    background-color: darkslategrey;
+}
+
+.pelicula.sinfaro {
+    grid-row: span 2;
+    background-color: midnightblue;
+}
+
+.pelicula.clara {
+    grid-column: span 2;
+    background-color: hotpink;
+}
+
+.pelicula.hilos {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: dimgrey;
+}
+
+.pelicula.mirar {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: darkolivegreen;
+}
+
+.pelicula.medianoche {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: black;
+}
+
+.sedes {
+    padding: 0 5%;
+}
+
+.sedes-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.sedes-header p {
+    color: green;
+}
+
+.containers-sedes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1% 0;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.container-sede {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex: 1;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid grey;
+    padding: 2%;
+}
+
+.subtle {
+    color: green;
+    margin-bottom: 4%;
+}
+
+.text-sede {
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.text-sede h2 {
+    margin-bottom: 2%;
+}
+
+.text-sede p {
+    margin-bottom: 5%;
+}
+
+.info-sede {
+    border-top: 1px solid grey;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer {
+    background-color: #1a1919;
+    padding: 5% 7%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-content {
+    color: white;
+    width: 33%;
+}
+
+.footer-content strong {
+    color: green;
+}
+
+.footer-content p {
+    color: grey;
+}
+
+.footer-taquilla h3 {
+    color: goldenrod;
+}
+
+.footer-taquilla p {
+    color: grey;
+}
+
+.footer-contact h3 {
+    color: goldenrod;
+}
+
+.footer-contact p {
+    color: grey;
+}
+
+/* NO ME IBA EN MI PORTATIL PERO LAS MEDIDAS TIPICAS SON: 576px, 768px,992px y 1200px*/
+@media (max-width: 1000px) {
+    .text p {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .precio-nav {
+        display: none;
+    }
+
+    .hero {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .programacion-salas {
+        margin: 0 auto;
+    }
+
+    .programacion-header {
+        text-align: center;
+    }
+
+    .taquillas {
+        margin: 0 auto;
+    }
+
+    .salas-stadistics {
+        margin: 0 auto;
+    }
+
+    .sedes-header {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .containers-sedes {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .container-peliculas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .pelicula.sal {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .pelicula.sinfaro {
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+
+    .pelicula.clara {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .pelicula.hilos {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .pelicula.mirar {
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+
+    .pelicula.medianoche {
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 596px) {
+    .text p {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .precio-nav {
+        display: none;
+    }
+
+    .hero {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .programacion-salas {
+        margin: 0 auto;
+    }
+
+    .programacion-header {
+        text-align: center;
+    }
+
+    .taquillas {
+        margin: 0 auto;
+    }
+
+    .salas-stadistics {
+        margin: 0 auto;
+    }
+
+    .sedes-header {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .containers-sedes {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .container-peliculas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .pelicula.sal {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .pelicula.sinfaro {
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+
+    .pelicula.clara {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .pelicula.hilos {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .pelicula.mirar {
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+
+    .pelicula.medianoche {
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+}
